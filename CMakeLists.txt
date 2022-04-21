@@ -28,12 +28,14 @@ target_link_libraries(Mikompilation PUBLIC
         ${UI_LIB}
         ${GAME_LIB}
         ${RENDER_LIB}
+        ${THIRDPARTY_LIB}
         )
 
 target_include_directories(Mikompilation PUBLIC
         ${UI_INCLUDE_DIRS}
         ${GAME_INCLUDE_DIRS}
         ${RENDER_INCLUDE_DIRS}
+        ${THIRDPARTY_HEADERS}
         )
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD

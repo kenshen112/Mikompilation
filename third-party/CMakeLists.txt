@@ -31,7 +31,7 @@ set(THIRDPARTY_HEADERS
         )
 
 
-add_library(ThirdParty EXCLUDE_FROM_ALL ${THIRDPARTY_SOURCES} ${THIRDPARTY_HEADERS})
+add_library(ThirdParty STATIC ${THIRDPARTY_SOURCES} ${THIRDPARTY_HEADERS})
 
 set(ThirdParty_INCLUDE_DIRS
         ${CMAKE_CURRENT_SOURCE_DIR}
@@ -43,6 +43,7 @@ set(ThirdParty_INCLUDE_DIRS
 
 target_include_directories(ThirdParty PUBLIC
         ${ThirdParty_INCLUDE_DIRS}
+        ${FMT_HEADERS}
         )
 
-target_link_libraries(ThirdParty PUBLIC glfw OpenGL::GL)
+target_link_libraries(ThirdParty PUBLIC glfw OpenGL::GL fmt::fmt)
