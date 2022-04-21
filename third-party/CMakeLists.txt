@@ -13,6 +13,7 @@ if( MSVC )
 endif()
 
 add_subdirectory(glfw)
+add_subdirectory(fmt)
 
 set(THIRDPARTY_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/imgui/imgui.cpp
