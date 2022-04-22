@@ -23,6 +23,9 @@ bool MainWindow::Init()
 
   this->topMenuBar = new TopMenuBar;
 
+
+  consoleLogger = new ConsoleLogger();
+  
   return true;
 }
 
@@ -49,6 +52,8 @@ void MainWindow::Update()
   {
     this->topMenuBar->Update();
   }
+
+  consoleLogger->Open(open);
 
   EndFrame();
 }

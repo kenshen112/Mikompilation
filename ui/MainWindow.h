@@ -3,6 +3,7 @@
 #include "FileSelector.h"
 #include "MemoryViewer.h"
 #include "TopMenuBar.h"
+#include "ConsoleLogger.h"
 #include "imgui_render.h"
 
 class MainWindow
@@ -11,7 +12,11 @@ class MainWindow
   MemoryViewer *memoryViewer;
   GLFWwindow *window;
   FileSelector * filePicker;
+  ConsoleLogger* consoleLogger;
   TopMenuBar* topMenuBar;
+
+  bool *open = new bool(true);
+
 
  public:
   MainWindow(GLFWwindow *window);
