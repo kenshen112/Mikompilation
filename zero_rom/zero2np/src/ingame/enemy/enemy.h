@@ -1,53 +1,13 @@
 #pragma once
 #include <array>
 
+#include "actor_common.h"
 #include "basic_types.h"
 #include "effect_sub.h"
 #include "enemy_act.h"
 #include "enemy_dat.h"
 #include "fly_ctrl.h"
-#include "player.h"
 #include "sce_types.h"
-
-struct STATUS_DAT
-{
-  u_long sta;
-  u_long sta_old;
-  u_long mvsta;
-  u_short hp;
-  u_short sp;
-  u_short hpmax;
-  u_short spmax;
-  u_short hp_recover_time;
-  u_short sp_recover_time;
-  u_short sp_down_fl;
-  u_short dmg;
-  u_short rhspdmg;
-  u_short rhpdmg;
-  u_short rspdmg;
-  u_short dmg_old;
-  u_short dmg_type;
-  u_char dmg_cam_flag;
-  u_short dwalk_tm;
-  u_short cond;
-  u_short cond_old;
-  u_short cond_tm;
-  u_short invisible_timer;
-};
-
-struct MPOS
-{
-  sceVu0FVECTOR p0;
-  sceVu0FVECTOR p1;
-  sceVu0FVECTOR p2;
-  sceVu0FVECTOR p3;
-  sceVu0FVECTOR p4;
-  sceVu0FVECTOR p5;
-  sceVu0FVECTOR p6;
-  sceVu0FVECTOR p7;
-  sceVu0FVECTOR p8;
-  sceVu0FVECTOR p9;
-};
 
 enum ENE_STATUS
 {

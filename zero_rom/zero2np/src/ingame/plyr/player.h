@@ -1,36 +1,23 @@
 #pragma once
 
+#include "actor_common.h"
 #include "basic_types.h"
+#include "g3dLightEx.h"
+#include "n_equip_tray.h"
 #include "sce_types.h"
 
-struct MOVE_BOX
+struct CEneTracer
 {
-  float mloop;
-  sceVu0FVECTOR pos;
-  sceVu0FVECTOR bpos;
-  sceVu0FVECTOR mv;
-  sceVu0FVECTOR bmv;
-  sceVu0FVECTOR rot;
-  sceVu0FVECTOR brot;
-  sceVu0FVECTOR spd;
-  sceVu0FVECTOR rspd;
-  sceVu0FVECTOR trot;
-};
+ private:
+  //CWaitVariable<short int> mWaitCnt;
+  //CWrkVariable<char,0,10> mTraceEne;
 
-struct PLCMN_WRK
-{
-  MOVE_BOX mbox;
-  STATUS_DAT st;
-  PROOM_INFO pr_info;
-  u_char mode;
-  u_char atk_eneno;
-  u_char atk_pos;
-  u_char atk_rot;
-  float near_ene_dist;
-  float near_ene_dist_old;
-  u_char near_ene_no;
-  short int floor;
-  sceVu0FVECTOR headpos;
+ public:
+  //CEneTracer& operator=();
+  CEneTracer();
+  int Init();
+  void Work();
+  void Req(int iEneNo, int iFrame);
 };
 
 struct PLYR_WRK

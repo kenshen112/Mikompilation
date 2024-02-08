@@ -1,6 +1,12 @@
 #include "ingame.h"
 #include "logging/logging.h"
 
+INGAME_WRK ingame_wrk;
+
+INGAME_WRK::INGAME_WRK()
+{
+}
+
 void InitCostume()
 {
   SetPlyrMdlNo(0);

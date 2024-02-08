@@ -12,6 +12,7 @@ set(GAME_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/packfile.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/logging/logging.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/basic_types.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/actor_common.h
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/my_malloc.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/mem_util.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common/heapctrl.cpp
@@ -31,6 +32,7 @@ set(GAME_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/enemy_act.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/fly_ctrl.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/ingame.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/photo/n_equip_tray.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/loading/loading.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/map/MapSave.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/map/MapLight.cpp
@@ -66,6 +68,7 @@ set(GAME_HEADERS
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/main
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/sce
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/photo
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/effect
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph2d
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph3d

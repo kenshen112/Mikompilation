@@ -1,15 +1,9 @@
 #pragma once
 
 #include "basic_types.h"
+#include "gphase.h"
 #include "plyr_mdl.h"
 #include <bitset>
-
-typedef enum
-{
-  GPHASE_CONTINUE = 0,
-  GPHASE_END = 1,
-  GPHASE_NOFRAME = 2
-} GPHASE_ENUM;
 
 struct INGAME_WRK
 {
