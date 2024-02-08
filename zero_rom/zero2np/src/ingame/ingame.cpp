@@ -9,6 +9,10 @@ void InitCostume()
   SetSisterAcsNo(-1);
 }
 
+static void IngameWrkInitNotPlayData()
+{
+}
+
 void IngameWrkInit(int chapter_no, int difficultly_label)
 {
   char iVal;

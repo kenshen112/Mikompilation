@@ -1,0 +1,20 @@
+#pragma once
+
+enum G3DLIGHTTYPE
+{
+  G3DLIGHT_DIRECTIONAL = 0,
+  G3DLIGHT_POINT = 1,
+  G3DLIGHT_SPOT = 2,
+  NUM_G3DLIGHTTYPE = 3,
+  G3DLIGHT_AMBIENT = 3,
+  INVALID_G3DLIGHTTYPE = 2147483647,
+  G3DLIGHTTYPE_FORCE_DWORD = 2147483647
+};
+
+struct GRA3DLIGHTSTATUS
+{
+  int bEnable;
+  int bEnableToChar;
+  int bEnableToShadow;
+  int bEmulateToDirectionalLight;
+};

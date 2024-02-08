@@ -39,4 +39,3 @@ extern INGAME_WRK ingame_wrk;
 
 void InitCostume();
 void IngameWrkInit(int chapter_no, int difficultly_label);
-static void IngameWrkInitNotPlayData();

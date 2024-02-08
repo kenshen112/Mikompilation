@@ -25,9 +25,15 @@ set(GAME_SOURCES
 
         # Ingame
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/plyr/plyr_mdl.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/plyr/player.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/enemy.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/enemy_dat.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/enemy_act.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy/fly_ctrl.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/ingame.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/loading/loading.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/map/MapSave.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/map/MapLight.cpp
 
         # Outgame
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/outgame/option.cpp
@@ -37,6 +43,9 @@ set(GAME_SOURCES
 
         # Graphics
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph2d/message.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph3d/g3dLightEx.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph3d/gra3d.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/effect/effect_sub.cpp
 
         # System
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/system/os/system.cpp
@@ -55,9 +64,15 @@ set(GAME_SOURCES
 
 set(GAME_HEADERS
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/main
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/sce
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/common
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/effect
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph2d
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/graphics/graph3d
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/plyr
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/enemy
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame
+        ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/map
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/outgame
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/ingame/loading
         ${CMAKE_CURRENT_SOURCE_DIR}/zero2np/src/system/os
